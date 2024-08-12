@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href=".css"> -->
+</head>
+<style>
+    *{
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      
+    }
+    h1{
+        background-color:cadetblue;
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 6rem;
+        font-style:initial;
+        border:solid 5px purple;
+    }
+
+    .choice{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    font-size: large;
+    align-items: center;
+    }
+
+    .x{
+    height: 185px;
+    width: 185px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    object-fit: cover;
+       
+    }
+
+    .x:hover{
+        background-color:tomato;
+        cursor: pointer;
+    }
+   
+
+    img{
+        border-radius: 50%;
+        height:165px;
+        width: 165px;
+        justify-content: center;
+        object-fit: cover;  
+    }
+
+    .score{
+        margin-top: 2rem;
+        display: flex;
+        font-size: 3rem;
+        gap: 3rem;
+    }
+
+    .draw{
+        font-size: 30px;
+        display: inline;
+    }
+   #o,#p {
+    font-size: 5rem;
+   }
+
+   p{
+    font-size: 50px;
+    margin-top: 10px;
+   }
+  .container{
+    margin-top: 5rem;
+  }
+
+   #id{
+    padding: 1rem;
+    background-color:rgb(92, 0, 125);
+    color: antiquewhite;
+    display: inline;
+    border-radius: 1rem;
+   }
+
+   #id:hover{
+    background-color:rgb(255, 0, 0);
+    cursor: pointer;
+   }
+
+</style>
+<h1><B>ROCK PAPER SCISSOR GAME</B></h1>
+<body>
+    <div class="choice">  
+        <div class="x" id="img1">
+            <img src="/javascript/rockpaperscissor/rock.jpg">
+        </div>
+        <div class="x" id="img2">
+            <img src="/javascript/rockpaperscissor/paper.jpg"> 
+        </div>
+        <div class="x" id="img3">
+            <img src="/javascript/rockpaperscissor/scissor.jpg">        
+        </div>
+    </div>
+
+    <div class="score">
+        <div class="draw">
+          <p id="o">0</p>
+          <p>YOU</p>
+        </div>
+
+        <div class="draw">
+            <p id="p">0</p>
+            <p>COMP</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <span class="contain">
+            <p id="id">YOUR MOVE</p>
+        </span>   
+    </div>
+<script src="begi.js"></script>   
+</body>
+</html>
